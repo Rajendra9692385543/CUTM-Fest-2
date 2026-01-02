@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CUTM CSE Project Expo & Cultural Fest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="modern-header">
+    <div class="nav">
+      <div class="nav-left">
+        <div class="logo-container">
+          <div class="logo-circle">
+            <span class="logo-icon">🚀</span>
+          </div>
+          <div class="nav-title">
+            <span class="brand-name">Karukrit 2026</span>
+            <span class="brand-tagline">CUTM CSE Innovation Fest</span>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="project-expo.html" class="nav-link">Project Expo</a>
+        <a href="hackathon.html" class="nav-link">Hackathon</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#prizes" class="nav-link">Prizes</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn-cta" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+          <span class="btn-icon">⚡</span>
+          Register Now
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Dept. of CSE • Centurion University
+        </div>
+        <h1>
+          <span>Karukrit 2026</span>
+        </h1>
+        <p class="hero-subtitle">
+          "Code. Create. Celebrate." - Where Innovation Meets Tradition<br/>
+          One day of innovation, half-day of recognition, and two and a half days of cultural celebrations
+          by the Department of Computer Science & Engineering, CUTM.
+          External schools and universities are invited exclusively for the Project Expo.
+        </p>
+
+        <div class="hero-meta">
+          <!-- Change the date here -->
+          <span>
+            📅 <strong>Hackathon:</strong> 28 Jan 2026 | <strong>Project Expo:</strong> 29 Jan 2026
+          </span>
+          <span>
+            📍 CUTM, Department of CSE
+          </span>
+          <span>
+            💰 Cash Prizes Worth <strong>₹27,000</strong>
+          </span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="project-expo.html" class="btn-primary">
+            Register for Project Expo
+          </a>
+          <a href="hackathon.html" class="btn-primary">
+            Register for Hackathon
+          </a>
+          <button class="btn-outline" onclick="document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">
+            View Full Schedule
+          </button>
+        </div>
+
+        <p class="hero-note">
+          <strong>Note:</strong> Project Expo is open to CUTM, other universities, and schools.
+          Cultural events are exclusively for CUTM students.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <h2>Countdown to Day 1</h2>
+        <p>Keep an eye on the clock and get your projects ready.</p>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <div class="countdown-value" id="cd-days">--</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="cd-hours">--</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="cd-mins">--</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="cd-secs">--</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="hero-tags">
+          <span class="hero-tag">Innovation</span>
+          <span class="hero-tag">Inter-University</span>
+          <span class="hero-tag">CSE Projects</span>
+          <span class="hero-tag">Cultural Talent</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">About the Fest</h2>
+          <p class="section-sub">
+            Designed and hosted by the Department of CSE, Centurion University of Technology and Management.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="pill">Project Expo (Open for All)</div>
+          <h3>Showcase Your Innovation</h3>
+          <p>
+            The Project Expo is a platform for students from CUTM, other universities, and schools
+            to demonstrate real-world solutions, research prototypes, and creative ideas in computing and technology.
+          </p>
+          <ul class="list">
+            <li>Open to CSE and related disciplines</li>
+            <li>Teams from schools (Class 9–12) and colleges</li>
+            <li>Projects evaluated by academic and industry experts</li>
+          </ul>
+          <a href="project-expo.html" class="btn-primary" style="display: inline-block; margin-top: 1rem;">
+            Register Now
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="pill danger">Hackathon (24-Hour Challenge)</div>
+          <h3>Code Marathon Challenge</h3>
+          <p>
+            Join the ultimate 24-hour coding challenge! Build innovative solutions to real-world problems,
+            collaborate with teammates, and compete with the best developers in a non-stop coding marathon.
+          </p>
+          <ul class="list">
+            <li>24 hours of continuous coding</li>
+            <li>Team-based competition (2-4 members)</li>
+            <li>Problem statements released on-spot</li>
+            <li>Mentorship and technical support available</li>
+          </ul>
+          <a href="hackathon.html" class="btn-primary" style="display: inline-block; margin-top: 1rem;">
+            Register Now
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="pill secondary">Why Participate?</div>
+          <h3>Build, Present, Network</h3>
+          <p>
+            The fest is designed to help students present their work, receive feedback,
+            collaborate with peers, and connect with faculty and invited guests.
+          </p>
+          <ul class="list">
+            <li>Boost your resume and portfolio</li>
+            <li>Networking with faculty and invited evaluators</li>
+            <li>Exposure to diverse ideas and projects</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Event Schedule</h2>
+          <p class="section-sub">
+            A four-day plan combining innovation and celebration. Timings are indicative and can be customized.
+          </p>
+        </div>
+      </div>
+
+      <div class="schedule-grid">
+        <div class="schedule-day">
+          <div class="schedule-day-header">
+            <div>
+              <h3>Day 1 – Hackathon</h3>
+              <p class="schedule-date">28 January 2026 – 24-Hour Coding Marathon</p>
+            </div>
+            <span class="schedule-type">Hackathon</span>
+          </div>
+          <ul class="schedule-list">
+            <li><span class="schedule-time">09:30 AM</span> Team Checking</li>
+            <li><span class="schedule-time">09:45 AM</span> Opening Ceremony</li>
+            <li><span class="schedule-time">10:00 AM</span> Problem Statement Release</li>
+            <li><span class="schedule-time">10:15 AM</span> Coding Begins!</li>
+            <li><span class="schedule-time">01:30 PM</span> Lunch Break</li>
+            <li><span class="schedule-time">08:00 PM</span> Dinner & Networking</li>
+          </ul>
+        </div>
+
+        <div class="schedule-day">
+          <div class="schedule-day-header">
+            <div>
+              <h3>Day 2 – Project Expo</h3>
+              <p class="schedule-date">29 January 2026 – Innovation Showcase</p>
+            </div>
+            <span class="schedule-type">Expo</span>
+          </div>
+          <ul class="schedule-list">
+            <li><span class="schedule-time">09:30 AM</span> Team Checking & Registration</li>
+            <li><span class="schedule-time">09:45 AM</span> Opening Ceremony</li>
+            <li><span class="schedule-time">10:00 AM</span> Project Display Begins</li>
+            <li><span class="schedule-time">11:00 AM</span> Project Demos & Presentations</li>
+            <li><span class="schedule-time">01:30 PM</span> Lunch Break</li>
+            <li><span class="schedule-time">02:30 PM</span> Evaluation by Judges</li>
+            <li><span class="schedule-time">04:00 PM</span> Results & Prize Distribution</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prizes -->
+    <section id="prizes">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Event Prizes</h2>
+          <p class="section-sub">
+            Cash awards for both Project Expo and Hackathon competitions.
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 1rem; color: var(--primary);">Project Expo Prizes</h3>
+        <div class="prize-grid">
+          <div class="prize-card">
+            <div class="prize-rank">First Prize</div>
+            <div class="prize-amount">₹15,000</div>
+            <div class="prize-tagline">Best Overall Project</div>
+            <p>
+              Awarded to the project with strongest innovation, technical depth, clarity of problem statement,
+              and real-world applicability.
+            </p>
+          </div>
+          <div class="prize-card">
+            <div class="prize-rank">Second Prize</div>
+            <div class="prize-amount">₹7,000</div>
+            <div class="prize-tagline">Runner-Up</div>
+            <p>
+              Recognizing excellent work that demonstrates strong implementation, creativity, and presentation quality.
+            </p>
+          </div>
+          <div class="prize-card">
+            <div class="prize-rank">Third Prize</div>
+            <div class="prize-amount">₹5,000</div>
+            <div class="prize-tagline">Second Runner-Up</div>
+            <p>
+              Rewarding teams that showcase promising ideas and solid execution, encouraging them to carry the work forward.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom: 1rem; color: var(--accent);">Hackathon Prizes</h3>
+        <div class="prize-grid">
+          <div class="prize-card">
+            <div class="prize-rank">Winner</div>
+            <div class="prize-amount">₹25,000</div>
+            <div class="prize-tagline">Best Overall Solution</div>
+            <p>
+              The team with the most innovative, technically sound, and well-presented solution wins the grand prize.
+            </p>
+          </div>
+          <div class="prize-card">
+            <div class="prize-rank">First Runner-Up</div>
+            <div class="prize-amount">₹15,000</div>
+            <div class="prize-tagline">Excellence Award</div>
+            <p>
+              Recognizing outstanding technical implementation and creative problem-solving approach.
+            </p>
+          </div>
+          <div class="prize-card">
+            <div class="prize-rank">Second Runner-Up</div>
+            <div class="prize-amount">₹10,000</div>
+            <div class="prize-tagline">Innovation Award</div>
+            <p>
+              Awarded to the team showing exceptional creativity and potential for real-world impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Sponsors
+    <section id="sponsors">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Sponsors & Partners</h2>
+          <p class="section-sub">
+            Companies and organizations supporting innovation and student talent.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Partnership Tiers</h3>
+        <p style="font-size:0.85rem; color:var(--muted); margin-bottom:0.7rem;">
+          Sponsors will receive branding on event posters, banners, certificates, and website sections,
+          along with opportunities to interact with participants.
+        </p>
+        <div class="sponsor-row">
+          <div class="sponsor-tier">
+            <strong>Platinum Partner</strong> – ₹30,000+
+          </div>
+          <div class="sponsor-tier">
+            <strong>Gold Partner</strong> – ₹10,000–₹20,000
+          </div>
+          <div class="sponsor-tier">
+            <strong>Silver Partner</strong> – ₹5,000–₹9,999
+          </div>
+        </div>
+        <p style="font-size:0.8rem; color:var(--muted); margin-top:0.7rem;">
+          To become a sponsor, please contact the faculty coordinator listed in the Contact section.
+        </p>
+      </div>
+    </section> -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Contact & Venue</h2>
+          <p class="section-sub">
+            For any queries related to registration, schedule, or sponsorship, reach out to the organizing team.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Faculty Coordinators</h3>
+          <div class="contact-item">
+            <strong>Faculty Name 1</strong><br />
+            Department of CSE, CUTM<br />
+            Phone: +91-XXXXXXXXXX<br />
+            Email: faculty1@cutm.ac.in
+          </div>
+          <div class="contact-item">
+            <strong>Faculty Name 2</strong><br />
+            Department of CSE, CUTM<br />
+            Phone: +91-XXXXXXXXXX<br />
+            Email: faculty2@cutm.ac.in
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Student Coordinators</h3>
+          <div class="contact-item">
+            <strong>Student Name 1</strong><br />
+            CSE, CUTM<br />
+            Phone: +91-XXXXXXXXXX
+          </div>
+          <div class="contact-item">
+            <strong>Student Name 2</strong><br />
+            CSE, CUTM<br />
+            Phone: +91-XXXXXXXXXX
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Venue</h3>
+          <div class="contact-item">
+            Department of Computer Science & Engineering<br />
+            Centurion University of Technology and Management<br />
+            Paralakhemundi Campus, Odisha, India
+          </div>
+          <div class="contact-item">
+            <strong>Google Maps:</strong><br />
+            Search for “Centurion University Paralakhemundi”
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="modern-footer">
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="footer-icon">🚀</span>
+            <span class="footer-title">Karukrit 2026</span>
+          </div>
+          <p class="footer-description">
+            Where Innovation Meets Tradition - The ultimate platform for showcasing technical excellence and celebrating creativity.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">🐦</a>
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">📺</a>
+            <a href="#" class="social-link">🔗</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About Fest</a></li>
+              <li><a href="project-expo.html">Project Expo</a></li>
+              <li><a href="hackathon.html">Hackathon</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Events</h4>
+            <ul>
+              <li><a href="project-expo.html">Innovation Showcase</a></li>
+              <li><a href="hackathon.html">24-Hour Coding</a></li>
+              <li><a href="#prizes">Prize Distribution</a></li>
+              <li><a href="#contact">Networking</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>📍 CUTM, Paralakhemundi</li>
+              <li>📧 info@karukrit2026.com</li>
+              <li>📞 +91-XXXXXXXXXX</li>
+              <li>🌐 www.karukrit2026.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">
+            © <span id="year"></span> Karukrit 2026 | Department of Computer Science & Engineering, CUTM
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
