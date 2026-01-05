@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Hackathon - Karukrit 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-expo.css">
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+
 </head>
 <body>
   <!-- Header / Nav -->
@@ -17,17 +21,15 @@
           </div>
           <div class="nav-title">
             <span class="brand-name">Karukrit 2026</span>
-            <span class="brand-tagline">CUTM CSE Innovation Fest</span>
+            <span class="brand-tagline">CUTM CSE Fest</span>
           </div>
         </div>
       </div>
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="index.html#about" class="nav-link">About</a>
         <a href="project-expo.html" class="nav-link">Project Expo</a>
-        <a href="hackathon.html" class="nav-link">Hackathon</a>
-        <a href="#schedule" class="nav-link">Schedule</a>
-        <a href="#registration" class="nav-link">Registration</a>
+        <a href="#rules" class="nav-link">Rules</a>
+        <a href="#prizes" class="nav-link">Prizes</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-actions">
@@ -40,113 +42,136 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <div class="badge">
-          <span class="badge-dot"></span>
-          24-Hour Hackathon • Code, Create, Compete
-        </div>
-        <h1>
-          <span>Hackathon</span> - Code Marathon
-        </h1>
-        <p class="hero-subtitle">
-          Join the ultimate coding challenge! 24 hours of non-stop coding, innovation, and collaboration. 
-          Build solutions to real-world problems, learn new technologies, and compete with the best developers.
-        </p>
+<section class="hero">
+  <div class="hero-inner hero-with-logo">
 
-        <div class="hero-meta">
-          <span>
-            ⏰ <strong>Duration:</strong> 9 Hours Non-Stop
-          </span>
-          <span>
-            📍 CUTM, Department of CSE
-          </span>
-          <span>
-            💰 Prize Pool <strong>₹27,000</strong>
-          </span>
-        </div>
+    <!-- LEFT: COMPANY LOGO
+    <div class="hero-logo">
+      CHANGE IMAGE PATH IF NEEDED -->
+      <!-- <img src="assets/ups.png" alt="Company Logo">
+      <img src="assets/HCL.jpeg" alt="Company Logo">
+    </div> -->
 
-        <div class="hero-actions">
-          <button class="btn-primary" onclick="document.getElementById('registration').scrollIntoView({behavior:'smooth'})">
-            Register Your Team
-          </button>
-          <button class="btn-outline" onclick="document.getElementById('rules').scrollIntoView({behavior:'smooth'})">
-            View Rules
-          </button>
-        </div>
-
-        <p class="hero-note">
-          <strong>Team Size:</strong> 2-4 members. Open to all students and professionals.
-        </p>
+    <!-- MIDDLE: HACKATHON CONTENT -->
+    <div class="hero-content">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Hackathon • Code, Create, Compete
       </div>
 
-      <div class="hero-card">
-        <h2>Hackathon Timeline</h2>
-        <p>24 hours of intense coding and innovation.</p>
-        <div class="countdown" id="hackathon-countdown">
-          <div class="countdown-item">
-            <div class="countdown-value">24</div>
-            <div class="countdown-label">Hours</div>
-          </div>
-          <div class="countdown-item">
-            <div class="countdown-value">6</div>
-            <div class="countdown-label">Rounds</div>
-          </div>
-          <div class="countdown-item">
-            <div class="countdown-value">100+</div>
-            <div class="countdown-label">Teams</div>
-          </div>
-          <div class="countdown-item">
-            <div class="countdown-value">₹50K</div>
-            <div class="countdown-label">Prizes</div>
-          </div>
-        </div>
-        
-        <div class="hero-tags">
-          <span class="hero-tag">Problem Solving</span>
-          <span class="hero-tag">Team Work</span>
-          <span class="hero-tag">Innovation</span>
-          <span class="hero-tag">24/7 Coding</span>
-        </div>
+      <h1>
+        <span>Hackathon</span> - Code Marathon
+      </h1>
+
+      <p class="hero-subtitle">
+        Join the ultimate coding challenge! Non-stop coding, innovation, and collaboration.
+        Build solutions to real-world problems, learn new technologies, and compete with the best developers.
+      </p>
+
+      <div class="hero-meta">
+        <span>
+          📅 <strong>28 January 2026</strong>
+        </span>
+        <span>
+          📌 CUTM, Department of CSE
+        </span>
+        <span>
+          💰 Prize Pool <strong>₹27,000</strong>
+        </span>
+      </div>
+
+      <div class="hero-actions">
+  <a href="https://forms.gle/k625P1bUUuTyCqH2A"
+     target="_blank"
+     class="btn-primary">
+    Register Your Team
+  </a>
+
+  <button class="btn-outline"
+    onclick="document.getElementById('rules').scrollIntoView({ behavior: 'smooth' })">
+    View Rules
+  </button>
+</div>
+
+
+      <p class="hero-note">
+        <strong>Team Size:</strong> 2–5 members. And Opened for all students and professionals.
+      </p>
+      
+    </div>
+
+    <!-- RIGHT: TAGS / HIGHLIGHTS -->
+    <div class="hero-card">
+      <h2>Hackathon Focus</h2>
+      <div class="hero-tags">
+        <span class="hero-tag">Problem Solving</span>
+        <span class="hero-tag">Team Work</span>
+        <span class="hero-tag">Innovation</span>
+        <span class="hero-tag">Rapid Prototyping</span>
+        <span class="hero-tag">Coding Sprint</span>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <main>
-    <!-- Resource Persons -->
-    <section id="resource-persons">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">About the Resource Persons</h2>
-          <p class="section-sub">
-            Meet our expert mentors and judges who will guide teams and evaluate hackathon solutions.
-          </p>
-        </div>
-      </div>
+    <!-- Resource Person -->
+<section class="resource-section">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">External Industry Experts</h2>
+      <p class="section-sub">
+        Guidance from an experienced industry professional
+      </p>
+    </div>
+  </div>
 
-      <div class="resource-grid">
+  <div class="resource-card">
+    <!-- CENTER: PHOTO + NAME -->
+    <div class="resource-center">
+      <!-- CHANGE IMAGE PATH BELOW -->
+      <img src="chinmayee.jpeg" alt="Resource Person">
+      <h3>Mr. Chinmay Sahoo</h3>
+      <span class="resource-role">Director of Engineering | Architect | Full-Stack developer</span>
+    </div>
 
-        <!-- Example 3: Default with Building Icon Watermark -->
-        <div class="resource-person-card">
-          <div class="resource-avatar">👨🎨</div>
-          <div class="resource-name">Ms. UX Designer</div>
-          <div class="resource-designation">Lead UX Designer</div>
-          <div class="resource-company">Design Studio</div>
-          <p class="resource-bio">
-            User experience specialist helping teams create intuitive and impactful solutions during the hackathon.
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- RIGHT: CONTENT FROM CV -->
+    <div class="resource-content">
+      <p>
+        Chinmay Sahoo is a Director of Technology at UPS, a Fortune 500 company, where he leads and delivers multiple enterprise-level products. With experience across both large enterprises and fast-paced startups, he has worn various hats throughout his career, majoring in system architecture, platform design, and solutioning. Chinmay has built and scaled high-speed development ecosystems, driven complex integrations, and enabled data-driven platforms across logistics and e-commerce domains. Passionate about building resilient systems and strong teams, he brings a hands-on, execution-focused, and real-world perspective to technology leadership.
+      </p>
+    </div>
+  </div>
+  
+</section>
+<section><div class="resource-card">
+    <!-- CENTER: PHOTO + NAME -->
+    <div class="resource-center">
+      <!-- CHANGE IMAGE PATH BELOW -->
+      <img src="Abhilash.jpeg" alt="Resource Person">
+      <h3>Mr. Abhilash Jenna</h3>
+      <span class="resource-role">Product Manager | AI Agent Engineer</span>
+    </div>
 
+    <!-- RIGHT: CONTENT FROM CV -->
+    <div class="resource-content">
+      <p>
+Abhilash Jenna is a Product Manager with a strong focus on building scalable, user-centric digital products across web and platform ecosystems. He brings a balanced blend of business understanding, technical acumen, and customer empathy to product development, working closely with engineering, design, and business stakeholders to translate ideas into impactful solutions.</p>
+<p>With experience spanning requirement discovery, product road-mapping, backlog prioritization, and delivery execution, Abhilash has played a key role in shaping products from concept to launch. He has worked on optimizing user journeys, improving product performance, and aligning product outcomes with business goals.
+      </p>
+      <p>
+        Abhilash is particularly skilled in collaborating within cross-functional teams, driving data-informed decisions, and continuously iterating products based on user feedback and market signals. Passionate about solving real-world problems through thoughtful product design, he brings a hands-on, execution-driven, and outcome-oriented mindset to product management.
+      </p>
+    </div>
+  </div></section>
     <!-- Rules & Guidelines -->
     <section id="rules">
       <div class="section-header">
         <div>
           <h2 class="section-title">Hackathon Rules & Guidelines</h2>
           <p class="section-sub">
-            Important rules and guidelines for the 24-hour coding marathon.
+            Important rules and guidelines for the coding marathon.
           </p>
         </div>
       </div>
@@ -156,9 +181,9 @@
           <div class="pill">Team Formation</div>
           <h3>Team Requirements</h3>
           <ul class="list">
-            <li>Team size: 2-4 members (no solo participation)</li>
+            <li>Team size: 2-5 members (no solo participation)</li>
             <li>Mixed teams from different institutions allowed</li>
-            <li>At least one member should be present at all times</li>
+            
             <li>Team leader will be the main point of contact</li>
             <li>No team changes after registration closes</li>
           </ul>
@@ -168,7 +193,7 @@
           <div class="pill secondary">Coding Rules</div>
           <h3>Development Guidelines</h3>
           <ul class="list">
-            <li>Code must be written during the 24-hour period</li>
+            <li>Code must be written during the given period</li>
             <li>Pre-existing libraries and frameworks allowed</li>
             <li>No pre-written code specific to the problem</li>
             <li>All code must be original and team-created</li>
@@ -182,9 +207,9 @@
           <ul class="list">
             <li>Working prototype or demo</li>
             <li>Source code (GitHub repository)</li>
-            <li>Presentation slides (5-10 minutes)</li>
+            <li>Presentation slides (5 minutes)</li>
             <li>Project documentation</li>
-            <li>Video demo (optional but recommended)</li>
+            
           </ul>
         </div>
       </div>
@@ -196,7 +221,7 @@
         <div>
           <h2 class="section-title">Hackathon Schedule</h2>
           <p class="section-sub">
-            Detailed timeline for the 24-hour hackathon event on 28 January 2026.
+            Detailed timeline for the hackathon event on 28 January 2026.
           </p>
         </div>
       </div>
@@ -205,8 +230,8 @@
         <div class="schedule-day">
           <div class="schedule-day-header">
             <div>
-              <h3>Day 1 – Hackathon</h3>
-              <p class="schedule-date">28 January 2026 – 24-Hour Coding Marathon</p>
+              <h3>Pre Event 1 – Hackathon</h3>
+              <p class="schedule-date">28 January 2026 – Coding Marathon</p>
             </div>
             <span class="schedule-type">Hackathon</span>
           </div>
@@ -216,53 +241,8 @@
             <li><span class="schedule-time">10:00 AM</span> Problem Statement Release</li>
             <li><span class="schedule-time">10:15 AM</span> Coding Begins!</li>
             <li><span class="schedule-time">01:30 PM</span> Lunch Break</li>
-            <li><span class="schedule-time">08:00 PM</span> Dinner & Networking</li>
+            <li><span class="schedule-time">02:30 PM</span> Resume Event</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem Themes -->
-    <section>
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Problem Themes</h2>
-          <p class="section-sub">
-            Potential problem domains that may be featured in the hackathon.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <div class="pill">Healthcare</div>
-          <h3>Digital Health Solutions</h3>
-          <p>Build applications for telemedicine, health monitoring, medical data management, or wellness tracking.</p>
-        </div>
-        <div class="card">
-          <div class="pill secondary">Education</div>
-          <h3>EdTech Innovation</h3>
-          <p>Create tools for online learning, student management, skill assessment, or educational games.</p>
-        </div>
-        <div class="card">
-          <div class="pill">Environment</div>
-          <h3>Sustainability & Green Tech</h3>
-          <p>Develop solutions for environmental monitoring, waste management, or renewable energy optimization.</p>
-        </div>
-        <div class="card">
-          <div class="pill secondary">Smart Cities</div>
-          <h3>Urban Solutions</h3>
-          <p>Build applications for traffic management, public services, citizen engagement, or city planning.</p>
-        </div>
-        <div class="card">
-          <div class="pill">FinTech</div>
-          <h3>Financial Technology</h3>
-          <p>Create solutions for digital payments, financial inclusion, budgeting, or investment management.</p>
-        </div>
-        <div class="card">
-          <div class="pill secondary">Social Impact</div>
-          <h3>Community Solutions</h3>
-          <p>Develop tools for social networking, community building, disaster management, or accessibility.</p>
         </div>
       </div>
     </section>
@@ -281,7 +261,7 @@
       <div class="prize-grid">
         <div class="prize-card">
           <div class="prize-rank">Winner</div>
-          <div class="prize-amount">₹25,000</div>
+          <div class="prize-amount">₹15,000</div>
           <div class="prize-tagline">Best Overall Solution</div>
           <p>
             The team with the most innovative, technically sound, and well-presented solution wins the grand prize.
@@ -289,7 +269,7 @@
         </div>
         <div class="prize-card">
           <div class="prize-rank">First Runner-Up</div>
-          <div class="prize-amount">₹15,000</div>
+          <div class="prize-amount">₹7,000</div>
           <div class="prize-tagline">Excellence Award</div>
           <p>
             Recognizing outstanding technical implementation and creative problem-solving approach.
@@ -297,7 +277,7 @@
         </div>
         <div class="prize-card">
           <div class="prize-rank">Second Runner-Up</div>
-          <div class="prize-amount">₹10,000</div>
+          <div class="prize-amount">₹5,000</div>
           <div class="prize-tagline">Innovation Award</div>
           <p>
             Awarded to the team showing exceptional creativity and potential for real-world impact.
@@ -305,55 +285,18 @@
         </div>
       </div>
 
-      <div class="grid" style="margin-top: 2rem;">
-        <div class="card">
-          <div class="pill secondary">Special Awards</div>
-          <h3>Additional Recognition</h3>
-          <ul class="list">
-            <li><strong>Best UI/UX Design:</strong> Certificate + Goodies</li>
-            <li><strong>Most Social Impact:</strong> Certificate + Goodies</li>
-            <li><strong>Best Use of Technology:</strong> Certificate + Goodies</li>
-            <li><strong>People's Choice Award:</strong> Certificate + Goodies</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="pill">Participation Benefits</div>
-          <h3>What You Get</h3>
-          <ul class="list">
-            <li>Certificate of participation for all</li>
-            <li>Networking with industry mentors</li>
-            <li>24 hours of free food and refreshments</li>
-            <li>Hackathon t-shirt and goodies</li>
-            <li>LinkedIn recommendations from mentors</li>
-          </ul>
-        </div>
-      </div>
     </section>
 
-    <!-- Registration -->
+    <!-- INFORMATION -->
     <section id="registration">
       <div class="section-header">
         <div>
-          <h2 class="section-title">Hackathon Registration</h2>
+          <h2 class="section-title">Hackathon Information</h2>
           <p class="section-sub">
-            Register your team for the 24-hour coding marathon. Click the button below to fill the registration form.
+            Key details for participants regarding registration, what to bring, and facilities provided.
           </p>
         </div>
       </div>
-
-      <div class="form-grid">
-        <div class="card" style="text-align: center; padding: 2rem;">
-          <h3>Ready to Join the Hackathon?</h3>
-          <p style="margin: 1rem 0; color: var(--muted);">
-            Click the button below to register your team for the 24-hour coding challenge.
-          </p>
-          <a href="#" target="_blank" class="btn-primary" style="display: inline-block; margin: 1rem 0;">
-            Click Here to Register Team
-          </a>
-          <p style="font-size: 0.8rem; color: var(--muted);">
-            The registration form will open in a new tab. Team leader should fill the form.
-          </p>
-        </div>
 
         <div class="info-card">
           <h3>Important Information</h3>
@@ -361,8 +304,8 @@
             <li><strong>Registration Fee:</strong> Free for all participants</li>
             <li><strong>Team Formation:</strong> Can be done before or during registration</li>
             <li><strong>Equipment:</strong> Bring your own laptops and chargers</li>
-            <li><strong>Internet:</strong> High-speed WiFi provided</li>
-            <li><strong>Food:</strong> All meals and snacks included</li>
+            <li><strong>Internet:</strong> WiFi provided</li>
+            
           </ul>
 
           <h3 style="margin-top:0.8rem;">What to Bring?</h3>
@@ -377,10 +320,8 @@
           <h3 style="margin-top:0.8rem;">Facilities Provided</h3>
           <ul>
             <li>24/7 high-speed internet</li>
-            <li>Power outlets at every seat</li>
-            <li>Rest area with sleeping arrangements</li>
+            <li>Power outlets at every seat</li>        
             <li>Technical mentors and support</li>
-            <li>All meals, snacks, and beverages</li>
           </ul>
         </div>
       </div>
@@ -402,7 +343,7 @@
           <h3>Hackathon Coordinators</h3>
           <div class="contact-item">
             <strong>Dr. Faculty Name 1</strong><br />
-            Abinash Gaya<br />
+            Hackathon Director<br />
             Department of CSE, CUTM<br />
             Phone: +91-XXXXXXXXXX<br />
             Email: hackathon@cutm.ac.in
@@ -410,21 +351,18 @@
         </div>
 
         <div class="contact-card">
-          <h3>Decoration Team</h3>
+          <h3>Student Coordinators</h3>
           <div class="contact-item">
-            <strong>Lipsa Pragyan Pramita</strong><br />
+            <strong>Student Coordinator</strong><br />
+            Technical Coordinator<br />
             CSE, CUTM<br />
             Phone: +91-XXXXXXXXXX<br />
             Email: tech@cutmhackathon.com
           </div>
-          <!-- <div class="contact-item">
-            <strong>24/7 Support Hotline</strong><br />
-            For emergency technical issues<br />
-            Phone: +91-XXXXXXXXXX
-          </div> -->
+
         </div>
 
-        <!-- <div class="contact-card">
+        <div class="contact-card">
           <h3>Registration Support</h3>
           <div class="contact-item">
             <strong>Registration Team</strong><br />
@@ -438,7 +376,7 @@
             Email: mentors@cutmhackathon.com
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
   </main>
 
@@ -454,7 +392,7 @@
             Where Innovation Meets Tradition - The ultimate platform for showcasing technical excellence and celebrating creativity.
           </p>
           <div class="footer-social">
-            <a href="#" class="social-link">🐦</a>
+            <a href="https://www.instagram.com/karukrit_2026_cutmpkd?igsh=MTg5YjdybjRnenI3cw==&utm_source=ig_contact_invite" class="social-link">Instagram</a>
             <a href="#" class="social-link">📷</a>
             <a href="#" class="social-link">📺</a>
             <a href="#" class="social-link">🔗</a>
@@ -485,7 +423,7 @@
           <div class="footer-column">
             <h4>Contact Info</h4>
             <ul>
-              <li>📍 CUTM, Paralakhemundi</li>
+              <li>📌 CUTM, Paralakhemundi</li>
               <li>📧 info@karukrit2026.com</li>
               <li>📞 +91-XXXXXXXXXX</li>
               <li>🌐 www.karukrit2026.com</li>

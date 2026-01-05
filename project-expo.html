@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Project Expo - Karukrit 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-expo.css">
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+
 </head>
 <body>
   <!-- Header / Nav -->
@@ -17,17 +21,15 @@
           </div>
           <div class="nav-title">
             <span class="brand-name">Karukrit 2026</span>
-            <span class="brand-tagline">CUTM CSE Innovation Fest</span>
+            <span class="brand-tagline">CSE Innovation Fest</span>
           </div>
         </div>
       </div>
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="index.html#about" class="nav-link">About</a>
-        <a href="project-expo.html" class="nav-link">Project Expo</a>
         <a href="hackathon.html" class="nav-link">Hackathon</a>
-        <a href="#schedule" class="nav-link">Schedule</a>
-        <a href="#registration" class="nav-link">Registration</a>
+        <a href="#guidelines" class="nav-link">Guidelines</a>
+        <a href="#prizes" class="nav-link">Prizes</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-actions">
@@ -40,66 +42,119 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <div class="badge">
-          <span class="badge-dot"></span>
-          Project Expo • Open for All Institutions
-        </div>
-        <h1>
-          <span>Project Expo</span> - Innovation Showcase
-        </h1>
-        <p class="hero-subtitle">
-          Showcase your innovative projects and compete with the best minds from CUTM, other universities, and schools. 
-          Present your real-world solutions, research prototypes, and creative ideas in computing and technology.
-        </p>
+<section class="hero">
+  <div class="hero-inner hero-no-logo">
 
-        <div class="hero-meta">
-          <span>
-            📅 <strong>Day 1:</strong> Project Display & Evaluation
-          </span>
-          <span>
-            📍 CUTM, Department of CSE
-          </span>
-          <span>
-            💰 Cash Prizes Worth <strong>₹27,000</strong>
-          </span>
-        </div>
+    <!-- LEFT: CONTENT -->
+    <div class="hero-content">
 
-        <div class="hero-actions">
-          <button class="btn-primary" onclick="document.getElementById('registration').scrollIntoView({behavior:'smooth'})">
-            Register Your Project
-          </button>
-          <button class="btn-outline" onclick="document.getElementById('guidelines').scrollIntoView({behavior:'smooth'})">
-            View Guidelines
-          </button>
-        </div>
-
-        <p class="hero-note">
-          <strong>Open to:</strong> CUTM students, other universities, and school students (Class 9-12).
-        </p>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Project Expo • Open for All Institutions
       </div>
 
-      <div class="hero-card">
-        <h2>Project Categories</h2>
-        <p>Choose the category that best fits your project.</p>
-        
-        <div class="hero-tags">
-          <span class="hero-tag">Web Development</span>
-          <span class="hero-tag">Mobile Apps</span>
-          <span class="hero-tag">AI/ML</span>
-          <span class="hero-tag">IoT</span>
-          <span class="hero-tag">Blockchain</span>
-          <span class="hero-tag">Data Science</span>
-          <span class="hero-tag">Cybersecurity</span>
-          <span class="hero-tag">Game Development</span>
-        </div>
+      <h1>
+        <span>Project Expo</span> - Innovation Showcase
+      </h1>
+
+      <p class="hero-subtitle">
+        Showcase your innovative projects and compete with the best minds from CUTM and other universities.
+        Present real-world solutions, research prototypes, and creative ideas in computing and technology.
+      </p>
+
+      <div class="hero-meta">
+        <span>📅 <strong>29 January 2026:</strong> Project Display & Evaluation</span>
+        <span>📌 CUTM, Department of CSE</span>
+        <span>💰 Cash Prizes Worth <strong>₹27,000</strong></span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://forms.gle/DHDXJuHWM2EAkBR3A"
+           target="_blank"
+           class="btn-primary">
+          Register Your Team
+        </a>
+
+        <button class="btn-outline"
+          onclick="document.getElementById('guidelines').scrollIntoView({ behavior: 'smooth' })">
+          View Guidelines
+        </button>
+      </div>
+
+      <p class="hero-note">
+        <strong>Open to:</strong> CUTM Students and Students from Other Universities.
+      </p>
+    </div>
+
+    <!-- RIGHT: HERO CARD -->
+    <div class="hero-card">
+      <h2>Project Categories</h2>
+      <p>Choose the category that best fits your project.</p>
+
+      <div class="hero-tags">
+        <span class="hero-tag">Web Development</span>
+        <span class="hero-tag">Mobile Apps</span>
+        <span class="hero-tag">AI / ML</span>
+        <span class="hero-tag">IoT</span>
+        <span class="hero-tag">Blockchain</span>
+        <span class="hero-tag">Data Science</span>
+        <span class="hero-tag">Cybersecurity</span>
+        <span class="hero-tag">Game Development</span>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
+
 
   <main>
+    <!-- Resource Person -->
+<section class="resource-section">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">External Industry Experts</h2>
+      <p class="section-sub">
+        Guidance from an experienced industry professional
+      </p>
+    </div>
+  </div>
+<div class="resource-card">
+    <!-- CENTER: PHOTO + NAME -->
+    <div class="resource-center">
+      <!-- CHANGE IMAGE PATH BELOW -->
+      <img src="Jyotiranjan.jpg" alt="Resource Person">
+      <h3>Mr. Jyoti Ranjan Nayak </h3>
+      <span class="resource-role">VP(Lead Technical Engineer)</span>
+    </div>
+
+    <!-- RIGHT: CONTENT FROM CV -->
+    <div class="resource-content">
+      <p>
+An innovative and results-driven Java Engineering Manager with over 14+ years of experience in designing and delivering scalable, high-performance software solutions, with deep domain expertise in retail banking and mortgage systems.</p>
+<p>Proven track record of leading cross-functional teams and managing end-to-end project lifecycles, from requirement gathering to deployment and production support. Adept at building robust enterprise applications tailored for the financial sector, optimizing digital banking workflows, loan origination processes, and compliance systems.</p>
+<P>Highly skilled in the modern Java ecosystem, microservices architecture, and integration with core banking platforms and third-party mortgage services. Known for driving process improvements, mentoring engineering teams, and leveraging emerging technologies to ensure project success and high customer satisfaction.      </p>
+  </div>
+  </div>
+  </section>
+  <section>
+  <div class="resource-card">
+    <!-- CENTER: PHOTO + NAME -->
+    <div class="resource-center">
+      <!-- CHANGE IMAGE PATH BELOW -->
+      <img src="jeevan.jpeg" alt="Resource Person">
+      <h3>Mr. Jagat Jeevan Nayak</h3>
+      <span class="resource-role">Full-Stack developer</span>
+    </div>
+
+    <!-- RIGHT: CONTENT FROM CV -->
+    <div class="resource-content">
+      <p>
+Jagat Jeevan Nayak is a results-driven technology professional currently working with Tata Consultancy Services (TCS) for the past one year (Employee ID: 2849386). With an overall experience of 6 years and 5 months, he has successfully handled multiple projects involving cross-functional teams across diverse domains. Jagat has strong experience in coordinating with engineering, operations, and business stakeholders to ensure timely and high-quality project delivery. Known for his execution-focused mindset and collaborative approach, he contributes effectively to project planning, implementation, and delivery while continuously driving efficiency, accountability, and process improvement.      </p>
+    </div>
+  </div>
+</section>
+</section>
+
     <!-- Guidelines -->
     <section id="guidelines">
       <div class="section-header">
@@ -118,7 +173,7 @@
           <ul class="list">
             <li>CUTM students (all years, primarily CSE and related branches)</li>
             <li>Students from other universities and colleges</li>
-            <li>School students (Class 9-12)</li>
+            
             <li>Team size: 1-4 members</li>
             <li>One project per team</li>
           </ul>
@@ -248,11 +303,11 @@
           <ul class="schedule-list">
             <li><span class="schedule-time">09:30 AM</span> Team Checking & Registration</li>
             <li><span class="schedule-time">09:45 AM</span> Opening Ceremony</li>
-            <li><span class="schedule-time">10:00 AM</span> Project Display Begins</li>
-            <li><span class="schedule-time">11:00 AM</span> Project Demos & Presentations</li>
+            <li><span class="schedule-time">10:00 AM</span> Project Demos & Presentations</li>
+            <li><span class="schedule-time">12:30 PM</span> Evaluation by Judges</li>
             <li><span class="schedule-time">01:30 PM</span> Lunch Break</li>
-            <li><span class="schedule-time">02:30 PM</span> Evaluation by Judges</li>
-            <li><span class="schedule-time">04:00 PM</span> Results & Prize Distribution</li>
+            <li><span class="schedule-time">03:30 PM</span> Results & Prize Distribution</li>
+            
           </ul>
         </div>
       </div>
@@ -262,41 +317,17 @@
     <section id="registration">
       <div class="section-header">
         <div>
-          <h2 class="section-title">Project Expo Registration</h2>
-          <p class="section-sub">
-            Register your project for the expo. Click the button below to fill the registration form.
-          </p>
+          <h2 class="section-title">Important Details</h2>
+          
         </div>
       </div>
 
-      <div class="form-grid">
-        <div class="card" style="text-align: center; padding: 2rem;">
-          <h3>Ready to Register?</h3>
-          <p style="margin: 1rem 0; color: var(--muted);">
-            Click the button below to open the registration form and submit your project details.
-          </p>
-          <a href="#" target="_blank" class="btn-primary" style="display: inline-block; margin: 1rem 0;">
-            Click Here to Register
-          </a>
-          <p style="font-size: 0.8rem; color: var(--muted);">
-            The form will open in a new tab. Make sure to fill all required fields.
-          </p>
-        </div>
-
         <div class="info-card">
-          <h3>Important Dates</h3>
-          <ul>
-            <li><strong>Registration Deadline:</strong> To be announced</li>
-            <li><strong>Project Submission:</strong> Day of event</li>
-            <li><strong>Presentation Day:</strong> Day 1 of fest</li>
-            <li><strong>Results:</strong> Day 2 morning</li>
-          </ul>
-
           <h3 style="margin-top:0.8rem;">What to Bring?</h3>
           <ul>
             <li>Laptop/device with your project</li>
             <li>Presentation slides</li>
-            <li>Extension cords (if needed)</li>
+            
             <li>Project documentation</li>
             <li>Demo data/samples</li>
           </ul>
@@ -323,36 +354,27 @@
         <div class="contact-card">
           <h3>Faculty Coordinators</h3>
           <div class="contact-item">
-            <strong>Dr. Faculty Name 1</strong><br />
+            <strong>Dr. ABHISHEK DAS</strong><br />
             Project Expo Coordinator<br />
             Department of CSE, CUTM<br />
-            Phone: +91-XXXXXXXXXX<br />
-            Email: faculty1@cutm.ac.in
+            Phone: +91 7008809932<br />
+            Email: abhishek.das@cutm.ac.in
           </div>
         </div>
 
         <div class="contact-card">
           <h3>Student Coordinators</h3>
           <div class="contact-item">
-            <strong>Student Name 1</strong><br />
+            <strong>Pavan Patro</strong><br />
             Technical Coordinator<br />
             CSE, CUTM<br />
-            Phone: +91-XXXXXXXXXX
+            Phone: +91 6370515550
           </div>
           <div class="contact-item">
-            <strong>Student Name 2</strong><br />
+            <strong>Sudhanshu Shekar Nayak</strong><br />
             Registration Coordinator<br />
             CSE, CUTM<br />
-            Phone: +91-XXXXXXXXXX
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <h3>Technical Support</h3>
-          <div class="contact-item">
-            For technical queries about project requirements, setup, or demo arrangements, contact the technical team at:<br />
-            <strong>Email:</strong> techsupport@cutmcse.fest<br />
-            <strong>WhatsApp:</strong> +91-XXXXXXXXXX
+            Phone: +91 8260502669
           </div>
         </div>
       </div>
@@ -371,7 +393,7 @@
             Where Innovation Meets Tradition - The ultimate platform for showcasing technical excellence and celebrating creativity.
           </p>
           <div class="footer-social">
-            <a href="#" class="social-link">🐦</a>
+            <a href="https://www.instagram.com/karukrit_2026_cutmpkd?igsh=MTg5YjdybjRnenI3cw==&utm_source=ig_contact_invite" class="social-link">Instagram</a>
             <a href="#" class="social-link">📷</a>
             <a href="#" class="social-link">📺</a>
             <a href="#" class="social-link">🔗</a>
@@ -402,7 +424,7 @@
           <div class="footer-column">
             <h4>Contact Info</h4>
             <ul>
-              <li>📍 CUTM, Paralakhemundi</li>
+              <li>📌 CUTM, Paralakhemundi</li>
               <li>📧 info@karukrit2026.com</li>
               <li>📞 +91-XXXXXXXXXX</li>
               <li>🌐 www.karukrit2026.com</li>
