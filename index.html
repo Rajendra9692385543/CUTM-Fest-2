@@ -34,8 +34,38 @@
           Register Now
         </button>
       </div>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        ☰
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileMenu()"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="logo-container">
+        <img src="logo.jpeg" alt="Karukrit Logo" style="width: 34px; height: 34px; border-radius: 999px;">
+        <div class="nav-title">
+          <span class="brand-name">Karukrit 2026</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" onclick="closeMobileMenu()">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+      <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu(); document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</a>
+      <a href="project-expo.html" class="mobile-nav-link" onclick="closeMobileMenu()">Project Expo</a>
+      <a href="hackathon.html" class="mobile-nav-link" onclick="closeMobileMenu()">Hackathon</a>
+      <a href="#schedule" class="mobile-nav-link" onclick="closeMobileMenu(); document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">Schedule</a>
+      <a href="#prizes" class="mobile-nav-link" onclick="closeMobileMenu(); document.getElementById('prizes').scrollIntoView({behavior:'smooth'})">Prizes</a>
+      <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</a>
+    </div>
+    <button class="mobile-nav-cta" onclick="closeMobileMenu(); document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      ⚡ Register Now
+    </button>
+  </div>
 
   <!-- Hero -->
   <section class="hero">
@@ -443,5 +473,43 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function toggleMobileMenu() {
+      console.log('Toggle mobile menu called');
+      const overlay = document.getElementById('mobileNavOverlay');
+      const drawer = document.getElementById('mobileNavDrawer');
+      
+      if (overlay && drawer) {
+        overlay.classList.add('active');
+        drawer.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        console.log('Mobile menu opened');
+      } else {
+        console.error('Mobile nav elements not found');
+      }
+    }
+
+    function closeMobileMenu() {
+      console.log('Close mobile menu called');
+      const overlay = document.getElementById('mobileNavOverlay');
+      const drawer = document.getElementById('mobileNavDrawer');
+      
+      if (overlay && drawer) {
+        overlay.classList.remove('active');
+        drawer.classList.remove('active');
+        document.body.style.overflow = 'auto';
+        console.log('Mobile menu closed');
+      }
+    }
+
+    // Ensure DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM loaded, mobile nav elements:', {
+        overlay: document.getElementById('mobileNavOverlay'),
+        drawer: document.getElementById('mobileNavDrawer'),
+        button: document.querySelector('.mobile-menu-btn')
+      });
+    });
+  </script>
 </body>
 </html>

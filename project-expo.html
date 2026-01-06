@@ -33,13 +33,43 @@
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button class="btn-cta" onclick="document.getElementById('registration').scrollIntoView({behavior:'smooth'})">
+        <button class="btn-cta" onclick="window.open('https://forms.gle/DHDXJuHWM2EAkBR3A', '_blank')">
           <span class="btn-icon">⚡</span>
           Register Now
         </button>
       </div>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        ☰
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileMenu()"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="logo-container">
+        <img src="logo.jpeg" alt="Karukrit Logo" style="width: 34px; height: 34px; border-radius: 999px;">
+        <div class="nav-title">
+          <span class="brand-name">Karukrit 2026</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" onclick="closeMobileMenu()">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+      <a href="index.html#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+      <a href="project-expo.html" class="mobile-nav-link" onclick="closeMobileMenu()">Project Expo</a>
+      <a href="hackathon.html" class="mobile-nav-link" onclick="closeMobileMenu()">Hackathon</a>
+      <a href="#schedule" class="mobile-nav-link" onclick="closeMobileMenu(); document.getElementById('schedule').scrollIntoView({behavior:'smooth'})">Schedule</a>
+      <a href="#registration" class="mobile-nav-link" onclick="closeMobileMenu(); window.open('https://forms.gle/DHDXJuHWM2EAkBR3A', '_blank')">Registration</a>
+      <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu(); document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</a>
+    </div>
+    <button class="mobile-nav-cta" onclick="closeMobileMenu(); window.open('https://forms.gle/DHDXJuHWM2EAkBR3A', '_blank')">
+      ⚡ Register Now
+    </button>
+  </div>
 
   <!-- Hero -->
 <section class="hero">
@@ -65,7 +95,7 @@
       <div class="hero-meta">
         <span>📅 <strong>29 January 2026:</strong> Project Display & Evaluation</span>
         <span>📌 CUTM, Department of CSE</span>
-        <span>💰 Cash Prizes Worth <strong>₹30,000</strong></span>
+        <span>💰 Cash Prizes Worth <strong>₹27,000</strong></span>
       </div>
 
       <div class="hero-actions">
@@ -435,5 +465,28 @@ Jagat Jeevan Nayak is a results-driven technology professional currently working
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function toggleMobileMenu() {
+      const overlay = document.getElementById('mobileNavOverlay');
+      const drawer = document.getElementById('mobileNavDrawer');
+      
+      if (overlay && drawer) {
+        overlay.classList.add('active');
+        drawer.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeMobileMenu() {
+      const overlay = document.getElementById('mobileNavOverlay');
+      const drawer = document.getElementById('mobileNavDrawer');
+      
+      if (overlay && drawer) {
+        overlay.classList.remove('active');
+        drawer.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+  </script>
 </body>
 </html>
